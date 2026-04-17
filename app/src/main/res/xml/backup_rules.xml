@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Legacy auto-backup rules (Android 6.0 - Android 11).
+    Exclude the Room database and shared preferences so sensitive
+    business data (customers, orders, invoices, team emails) is not
+    uploaded to Google Drive via Android Auto Backup.
+-->
+<full-backup-content>
+    <exclude domain="database" path="box_infotech.db" />
+    <exclude domain="database" path="box_infotech.db-shm" />
+    <exclude domain="database" path="box_infotech.db-wal" />
+    <exclude domain="sharedpref" />
+</full-backup-content>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Deny cleartext (HTTP) traffic application-wide. If a future feature
+    adds networking, it must use HTTPS. Add a per-domain override here
+    only if absolutely required and justify it in review.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>
