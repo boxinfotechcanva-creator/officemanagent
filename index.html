@@ -406,44 +406,33 @@
             <div class="counselling-right">
                 <form class="counselling-form" onsubmit="return false;">
                     <div class="form-row">
-                        <input type="text" placeholder="Full Name" class="form-input">
-                        <input type="tel" placeholder="Phone Number" class="form-input">
-                        <input type="text" placeholder="Enter Your Name" class="form-input">
-                        <select class="form-input">
-                            <option>NEET Status</option>
-                            <option>Qualified</option>
-                            <option>Not Qualified</option>
-                            <option>Appearing</option>
+                        <input type="text" name="fullname" placeholder="Full Name" class="form-input">
+                        <input type="tel" name="phone" placeholder="Phone Number" class="form-input">
+                        <select name="neet_status" class="form-input">
+                            <option value="">NEET Status</option>
+                            <option value="qualified">Qualified</option>
+                            <option value="not_qualified">Not Qualified</option>
+                            <option value="appearing">Appearing</option>
                         </select>
                     </div>
                     <div class="form-row">
-                        <select class="form-input">
-                            <option>Preferred Country</option>
-                            <option>Bangladesh</option>
-                            <option>Uzbekistan</option>
-                            <option>Kazakhstan</option>
-                            <option>Nepal</option>
-                            <option>Russia</option>
-                            <option>Georgia</option>
+                        <select name="country" class="form-input">
+                            <option value="">Preferred Country</option>
+                            <option value="bangladesh">Bangladesh</option>
+                            <option value="uzbekistan">Uzbekistan</option>
+                            <option value="kazakhstan">Kazakhstan</option>
+                            <option value="nepal">Nepal</option>
+                            <option value="russia">Russia</option>
+                            <option value="georgia">Georgia</option>
                         </select>
-                        <select class="form-input">
-                            <option>Your Budget</option>
-                            <option>Under 20 Lakh</option>
-                            <option>20-30 Lakh</option>
-                            <option>30-50 Lakh</option>
-                            <option>Above 50 Lakh</option>
+                        <select name="budget" class="form-input">
+                            <option value="">Your Budget</option>
+                            <option value="under_20">Under 20 Lakh</option>
+                            <option value="20_30">20-30 Lakh</option>
+                            <option value="30_50">30-50 Lakh</option>
+                            <option value="above_50">Above 50 Lakh</option>
                         </select>
-                        <input type="date" placeholder="Your Date" class="form-input">
-                        <select class="form-input">
-                            <option>Select Budget</option>
-                            <option>Under 20 Lakh</option>
-                            <option>20-30 Lakh</option>
-                            <option>30-50 Lakh</option>
-                            <option>Above 50 Lakh</option>
-                        </select>
-                        <select class="form-input">
-                            <option>Select Date</option>
-                        </select>
+                        <input type="date" name="preferred_date" class="form-input">
                     </div>
                     <button type="submit" class="btn btn-yellow btn-lg">GET FREE GUIDANCE</button>
                 </form>
@@ -461,36 +450,42 @@
                         <span>Is NEET mandatory for MBBS abroad?</span>
                         <i class="fas fa-plus"></i>
                     </div>
+                    <div class="faq-answer" style="display:none;"><p>Yes, NEET qualification is mandatory for Indian students seeking MBBS abroad as per NMC guidelines. However, the cutoff is much lower compared to Indian medical colleges.</p></div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
                         <span>What is the total budget for MBBS abroad?</span>
                         <i class="fas fa-plus"></i>
                     </div>
+                    <div class="faq-answer" style="display:none;"><p>The total budget ranges from ₹20-50 Lakh depending on the country and university. Countries like Bangladesh and Uzbekistan offer affordable options starting from ₹20 Lakh.</p></div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
                         <span>Is MBBS abroad valid in India?</span>
                         <i class="fas fa-plus"></i>
                     </div>
+                    <div class="faq-answer" style="display:none;"><p>Yes, MBBS degrees from NMC-approved foreign universities are valid in India. Students need to pass the FMGE/NEXT exam to practice medicine in India.</p></div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
                         <span>What documents are required for admission?</span>
                         <i class="fas fa-plus"></i>
                     </div>
+                    <div class="faq-answer" style="display:none;"><p>Key documents include: 10th &amp; 12th mark sheets, NEET scorecard, passport, passport-size photographs, and a medical fitness certificate.</p></div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
                         <span>Which country is best for low-budget MBBS?</span>
                         <i class="fas fa-plus"></i>
                     </div>
+                    <div class="faq-answer" style="display:none;"><p>Bangladesh and Uzbekistan are the most affordable options for MBBS abroad, with total fees starting from ₹20 Lakh for the entire course duration.</p></div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question">
                         <span>Do universities provide hostel and Indian food?</span>
                         <i class="fas fa-plus"></i>
                     </div>
+                    <div class="faq-answer" style="display:none;"><p>Yes, most NMC-approved universities provide hostel accommodation and Indian mess facilities for international students.</p></div>
                 </div>
             </div>
         </div>
@@ -572,7 +567,7 @@
     </footer>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/919651772121" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/919651772121" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
